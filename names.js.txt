@@ -1,0 +1,47 @@
+/// <refey.js" />
+/// <reference path="../modules/namrence path="../vendor/jqueres-module.js" />
+var genders = $('input[name="gender"]');
+var letters = $('.letters li');
+
+$(genders).on('click', function () {
+    getNames();
+});
+
+$(letters).on('click', function () {
+    $(letters).removeClass('is-active');
+    $(this).addClass('is-active');
+    getNames();
+});
+
+$(document).on('click', '.a-name', function () {
+    $('#hlNameMeaning').hide();
+    $('#spanRandomName').text('');
+    
+    NamesModule().getName($(this).data('id'));
+});
+
+
+function getNames() {
+
+    var selectedGender;
+    var selectedLetter = $('.letters li.is-active').data('letter');
+
+    $(genders).each(function () {
+        if ($(this).is(':checked'))
+            selectedGender = $(this).val();
+    });
+
+    var data = {
+        gnd: selectedGender,
+        stL: selectedLetter
+    };
+
+    NamesModule().getNames(data);
+}
+
+
+var btnRandomName = $('.btn-random-name');
+
+$(btnRandomName).on('click', function () {
+    NamesModule().getRandomName($(this).data('gender'));
+});
