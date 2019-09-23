@@ -12,43 +12,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <!--Navigacija-->
-    <div class="container bg mt-1 p-0">
-        <div class="row mx-auto">
-            <div class="col-md-12 ">
-                <nav class="navbar navbar-expand-lg navigacija">
-                    <button class="navbar-toggler custom-toggler navbar-dark" type="button" data-toggle="collapse"
-                        data-target="#myNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="myNavbar">
-                        <ul class="navbar-nav  mt-2 mt-lg-0">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Početna</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">O nama</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Kontakt</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Udomi</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Postavi Oglas</a>
-                            </li>
-                        </ul>
-                    </div>
-            </div>
-        </div>
-    </div>
-    </nav>
-    <!--Kraj navigacije-->
+    <!--Navigacija pogledaj navigacija.html-->
+    <div id="navig"></div>
+    <script type="text/javascript">
+        $.get("navigacija.html", function (data) {
+            $("#navig").replaceWith(data);
+        });
+    </script>
+    <!--kraj navigacije-->
     <!--Preporuceni-->
     <div class="container prep">
         <div class="row">
@@ -57,13 +32,25 @@
                 <p>
                     Ukoliko vaš ljubimac ima zdravstveni problem, ili imate dilemu oko njegove nege, zdravlja ili
                     ishrane. Pošaljite nam pitanje.
+                    <i class="fa fa-user-md float-right " style="font-size:70px;"></i>
+                    <a href="pitaj-veterinara.html" style="display: block; text-decoration: none "></a>
                 </p>
             </div>
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $(".preporuka").click(function () {
+                        window.location = $(this).find("a").attr("href");
+                        return false;
+                    });
+                });</script>
             <div class="offset-md-1 col-md-3 preporuka">
                 <h6>Azili za pse</h6>
                 <p>
-                    Ukoliko želite vernog prijatelja koji će vas razumeti, čuvati i pratiti kroz život, jedno od mesta
-                    na kojem ćete ga pronaći su azili i skloništa za napuštene životinje.
+                    Ukoliko želite vernog prijatelja koji će vas pratiti kroz život, jedno od mesta
+                    na kojem ćete ga pronaći su azili i skloništa.
+                    <i class="fa fa-home float-right " style="font-size:70px;"></i>
+                    <a href="azili-sklonista-za-pse.html" style="display: block; text-decoration: none "></a>
+
                 </p>
             </div>
 
@@ -72,6 +59,8 @@
                 <p>
                     Pronađite najbolje veterinrske ambulante, zakažite pregled kod veterinara i pomozite Vašem kućnom
                     ljubimcu.
+                    <i class="fa fa-medkit float-right " style="font-size:70px;"></i>
+                    <a href="veterinarske-stanice.html" style="display: block; text-decoration: none "></a>
                 </p>
             </div>
         </div>
@@ -144,22 +133,24 @@
         </h3>
     </div>
     <!--Izaberi ime-->
-    <div class="container izaberime mt-3">
-        <div class="row">
-            <div class="col-md-3 mx-auto mt-5">
-                <img src="cssimg\ime.png" alt="izaberi ime za svog ljubimca" class="ime">
-            </div>
-            <div class="col-md-8 imetext">
-                <div class="font-italic text-light text-center "><i>
-                        <p class="h3">Kako da izaberete ime za vašeg psa?</p>
-                        <br>
-                        <p class="h5">Ako se razmišljate koje ime da date svom kućnom ljubimcu...</p>
-                        <br>
-                        <p class="h5">Za vas smo prikupili najbolja muška i ženska imena za pse.</p>
+    <a href="imena-za-pse.html" style="display: block; text-decoration: none ">
+        <div class="container izaberime mt-3">
+            <div class="row">
+                <div class="col-md-3 mx-auto mt-5">
+                    <img src="cssimg\ime.png" alt="izaberi ime za svog ljubimca" class="ime">
+                </div>
+                <div class="col-md-8 imetext">
+                    <div class="font-italic text-light text-center "><i>
+                            <p class="h3">Kako da izaberete ime za vašeg psa?</p>
+                            <br>
+                            <p class="h5">Ako se razmišljate koje ime da date svom kućnom ljubimcu...</p>
+                            <br>
+                            <p class="h5">Za vas smo prikupili najbolja muška i ženska imena za pse.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </a>
     <!--kontakt-->
     <div class="container kontakt">
         <div class="row">
@@ -172,7 +163,7 @@
         </div>
     </div>
     <!--footer-->
-    <div class="container foot text-light p-5">
+    <div class="container foot text-light p-0">
         <div class="row">
             <div class="col-md-4">
                 <a href="">Početna</a>
@@ -209,15 +200,16 @@
     <!-- Copyright -->
     <div class="container text-center my-auto">
         <div class="row">
-                <div class=" text-center pt-3 pb-3 bg-primary text-light w-100">
-                    © 2019 Copyright:
-                    <a class="text-light pb-3 " href="#"> Dalibor, Marko i Branko</a>
-                </div>
+            <div class=" text-center pt-3 pb-3 bg-primary text-light w-100">
+                © 2019 Copyright:
+                <a class="text-light pb-3 " href="#"> Dalibor, Marko i Branko</a>
+            </div>
         </div>
     </div>
 
 
     <!--Skripte-->
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

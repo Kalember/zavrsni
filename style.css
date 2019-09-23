@@ -1,13 +1,41 @@
 *{
-    font-family: 'Varela', sans-serif;
+    font-family: Roboto-Regular; 
+}
+body{
+    background-color: whitesmoke!important;
 }
 .navigacija{
-    background-color: #7ee5ff;
-    border-bottom: solid 3px blue;
+    border-bottom: solid 3px #17a2b8;
 }
 .nav-link{
     color: white;
     margin-right: 20px;
+    text-decoration: none;
+}
+.efe::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #17a2b8;
+    transition: width .3s;
+}
+.efe:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+.light-blue.darken-3 {
+    background-color: #0277bd!important;
+    
+}
+.navl:hover{
+    background-color: darkblue;
+    color: white;
+}
+.input-group-text {
+    color: white !important;
+    border: 0 !important;
+    border-radius: 0.25rem 0 0 0.25rem !important;
 }
 /*Deo sa preporucenim linkovima*/
 .prep{
@@ -15,9 +43,10 @@
 }
 .preporuka{
     height: 200px;  
-    background-color: #7ee5ff; 
+    background-color: whitesmoke; 
     text-align: left;
-    color: white;
+    box-shadow: 0px 0px 10px 10px lightgrey;
+    color: #17a2b8;
 }
 .preporuka>h6{
     margin-top: 20px;
@@ -27,8 +56,11 @@
     margin-top: 15px;
 }
 .preporuka:hover{
-    color:blue;
+    color:whitesmoke;
+    background-color: #17a2b8;
+    cursor: pointer;
 }
+
 @media screen and (min-width: 1224px){
    .preporuka {
        margin-right: 20px;
@@ -39,7 +71,7 @@
     .preporuka {
         margin-top: 20px;
         margin-right: 20px;
-       margin-left: 20px;   
+        margin-left: 20px;   
     }
 }
 /*deo ispod slideshow-a*/
@@ -59,13 +91,14 @@
     }
 .izaberime{
     width: 100%;
-    height: 60vh;
+    
     background-color: #7ee5ff;
     cursor:pointer;
 }
 .ime{
     opacity: 0.65;
     width: 250px;
+    padding-bottom: 30px;
     
 }
 .izaberime:hover img{
@@ -100,5 +133,100 @@
     padding: 25px;
 }
 .foot{
-    background-color: #7ee5ff;
+    background-color: #9bddee;
 }
+/*imena za pse*/
+.imena{
+    background-color: #77cee4e0;
+}
+.names{
+    background-color: white;
+    box-shadow: 0px 0px 10px 10px lightgray;
+    color: gray;
+}
+.names>p{
+    color: lightslategray;
+}
+.polovi {
+    max-width: 530px;
+    margin: 0 auto;
+    overflow: hidden;}
+
+.polovi li {
+    display: inline-block;
+    text-align: center;
+    width: 33%;
+    float: left;
+}
+
+.polovi li input[type=radio] {
+    display: none;
+}
+.polovi li input[type=radio]+label {
+    position: relative;
+    cursor: pointer;
+    display: block;
+    margin-top: 80px;
+    padding-top: 11px;
+    font-size: 1em;
+    user-select: none;
+}
+.polovi li input[type=radio]+label .icon {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: -57px;
+        z-index: 1;
+        width: 27px;
+        height: 37px;
+        fill: wheat;
+    }
+.polovi li input[type="radio"] + label::after {
+        position: absolute;
+        content: "";
+        width: 80px;
+        height: 80px;
+        background-color:#9bddee;
+        top: -80px;
+        left: 0px;
+        right: 0px;
+        border-radius: 50%;
+        margin: auto;
+        transition: all 0.3s ease 0s;
+    }
+.polovi li input[type=radio]:hover+label:after {
+    background-color: blue;
+}
+
+.names .post__body {
+        border: 1px solid #ebeae8;
+        margin-top: 77px;
+        position: relative;
+        background: url(cssimg\psi.svg);
+    }
+@media (max-width: 991px){
+.names__wrapper {
+    padding: 50px 20px 105px;
+    
+}}
+.names__wrapper .letters {
+    display: table;
+    margin: 0 auto;
+    max-width: 505px;
+    overflow: hidden;
+    font-family: Roboto-Regular;
+}
+.names__wrapper .letters li {
+    font-size: 2.14286em;
+    color: #613c4b;
+    line-height: 1.73333;
+    float: left;
+    display: inline-block;
+    width: 10%;
+    text-align: center;
+    cursor: pointer;
+    font-family: Roboto-Regular;}
+    .names__wrapper .letters li.is-active, .names__wrapper .letters li:hover {
+        color: #f66;
+    }
