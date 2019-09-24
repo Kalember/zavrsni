@@ -23,6 +23,12 @@
         });
     </script>
     <!--kraj navigacije-->
-    
+    <!--footer-->
+    <div id="footer"></div>
+    <script type="text/javascript">
+        $.get("footer.html", function (data) {
+            $("#footer").replaceWith(data);
+        });
+    </script>
 </body>
 </html>

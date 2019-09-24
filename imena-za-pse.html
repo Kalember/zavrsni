@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css?family=Varela&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+</head>
+
+<body class="imena">
+    <!--Navigacija-->
+    <div class="container bg mt-1 p-0">
+        <div class="row mx-auto">
+            <div class="col-md-12 p-0 ">
+                <nav class="navbar navbar-expand-lg navigacija">
+                    <button class="navbar-toggler custom-toggler navbar-dark" type="button" data-toggle="collapse"
+                        data-target="#myNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="navbar-nav  mt-2 mt-lg-0">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Početna</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">O nama</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Kontakt</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Udomi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Postavi Oglas</a>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+    </nav>
+    <!--Kraj navigacije-->
+    <div class="container mt-5 mb-5 ">
+        <div class="row">
+            <div class="offset-md-1 col-md-10 offset-md-1 text-center names">
+                <div>
+                    <h3 class="mt-3 mb-3">Odaberite ime za svog ljubimca!</h3>
+                    <p>Istražite na stotine imena, ukoliko ne možete da se odlučite, izvucite nasumično ime za vašeg
+                        psa!</p>
+                </div>
+                <ul class="polovi pt-3">
+                    <li>
+                        <input id="rbtnFemale" value="2" type="radio" name="gender">
+                        <label for="rbtnFemale">
+                            <svg class="icon icon-location">
+                                <svg id="icon-sign" viewBox="0 0 32 32">
+
+                                    <path
+                                        d="M27.333 11.334c0-6.259-5.074-11.334-11.333-11.334s-11.333 5.074-11.333 11.334c0 6.035 4.718 10.968 10.666 11.313v4.020h-4c-0.368 0-0.666 0.298-0.666 0.667s0.298 0.666 0.666 0.666h4v3.333c0 0.369 0.299 0.667 0.667 0.667s0.667-0.298 0.667-0.667v-3.333h4c0.368 0 0.666-0.298 0.666-0.666s-0.298-0.667-0.666-0.667h-4v-4.020c5.948-0.345 10.666-5.278 10.666-11.313zM16 21.333c-1.351 0-2.66-0.264-3.892-0.786-1.191-0.503-2.261-1.225-3.18-2.143s-1.64-1.988-2.144-3.179c-0.521-1.232-0.785-2.542-0.785-3.892s0.265-2.66 0.785-3.892c0.504-1.191 1.225-2.26 2.144-3.179s1.988-1.64 3.18-2.144c1.231-0.521 2.541-0.785 3.892-0.785s2.66 0.264 3.892 0.785c1.191 0.503 2.261 1.225 3.18 2.144s1.64 1.988 2.144 3.179c0.52 1.232 0.785 2.541 0.785 3.892s-0.265 2.66-0.785 3.892c-0.504 1.19-1.225 2.26-2.144 3.179s-1.988 1.64-3.18 2.144c-1.231 0.521-2.541 0.786-3.892 0.786z">
+                                    </path>
+                                </svg>
+                            </svg>
+                            Ženska imena</label>
+                    </li>
+                    <li>
+                        <input id="rbtnMale" value="1" type="radio" name="gender">
+                        <label for="rbtnMale">
+                            <svg class="icon icon-location">
+                                <svg id="icon-masculine" viewBox="0 0 32 32">
+                                    <title>masculine</title>
+                                    <path
+                                        d="M22.5 0v1h7.793l-9.32 9.32c-2.229-2.059-5.206-3.321-8.473-3.321-6.893 0-12.5 5.607-12.5 12.5s5.607 12.5 12.5 12.5 12.5-5.608 12.5-12.5c0-3.267-1.261-6.244-3.32-8.473l9.32-9.32v7.793h1v-9l-0.5-0.5h-9zM12.5 31c-6.341 0-11.5-5.159-11.5-11.5s5.159-11.5 11.5-11.5 11.5 5.159 11.5 11.5-5.159 11.5-11.5 11.5z">
+                                    </path>
+                                </svg>
+                            </svg>
+                            Muška imena</label>
+                    </li>
+                    <li>
+                        <input id="rbtnUnisex" value="3" type="radio" name="gender">
+                        <label for="rbtnUnisex">
+                            <svg class="icon icon-location">
+                                <svg id="icon-man" viewBox="0 0 32 32">
+                                    <title>man</title>
+                                    <path
+                                        d="M21.962 23.85c-0.273-0.109-0.602 0.109-0.656 0.383-0.328 1.532-1.149 2.954-2.297 4.103-3.391 3.391-8.971 3.391-12.362 0s-3.391-8.971 0-12.362c3.391-3.391 8.971-3.391 12.362-0.055 0.602 0.547 1.094 1.203 1.477 1.915 0.164 0.273 0.492 0.383 0.766 0.219s0.383-0.492 0.219-0.766c-0.438-0.766-0.985-1.477-1.641-2.133-3.772-3.719-9.763-3.826-13.613-0.32l-2.251-2.251 1.532-1.532c0.219-0.219 0.219-0.547 0-0.766s-0.547-0.219-0.766 0l-1.532 1.532-0.985-0.985c-0.219-0.219-0.547-0.219-0.766 0s-0.219 0.547 0 0.766l0.985 0.985-1.532 1.532c-0.219 0.219-0.219 0.547 0 0.766 0.109 0.109 0.219 0.164 0.383 0.164 0.109 0 0.274-0.055 0.383-0.164l1.532-1.532 2.26 2.26c-3.402 3.902-3.262 9.811 0.421 13.494 1.915 1.915 4.431 2.899 6.947 2.899s5.032-0.93 6.892-2.844c1.313-1.313 2.188-2.899 2.626-4.65 0.109-0.274-0.109-0.602-0.383-0.657z">
+                                    </path>
+                                    <path
+                                        d="M30.715 0h-3.829c-0.328 0-0.547 0.219-0.547 0.547s0.219 0.547 0.547 0.547h2.462l-3.27 3.27c-3.901-3.428-9.831-3.297-13.523 0.395-1.422 1.422-2.407 3.227-2.735 5.251-0.055 0.328 0.164 0.602 0.438 0.656 0.328 0.055 0.602-0.164 0.656-0.438 0.274-1.75 1.149-3.391 2.407-4.65 3.391-3.391 8.971-3.391 12.417-0.055 3.391 3.391 3.391 8.971 0 12.362s-8.971 3.391-12.362 0c-0.602-0.602-1.149-1.258-1.532-2.024-0.164-0.274-0.492-0.383-0.766-0.219s-0.383 0.492-0.219 0.766c0.438 0.821 1.039 1.641 1.696 2.297 1.915 1.915 4.431 2.899 6.947 2.899s5.032-0.985 7.002-2.899c3.71-3.763 3.825-9.734 0.347-13.584l3.318-3.318v2.571c0 0.328 0.219 0.547 0.547 0.547s0.547-0.219 0.547-0.547v-3.829c-0-0.328-0.219-0.547-0.547-0.547z">
+                                    </path>
+                                </svg>
+                            </svg>
+                            Univerzalna imena</label>
+                    </li>
+                </ul>
+            
+            <div class="post__body">
+                <div class="names__wrapper">
+                    <ul class="letters">
+                        <li data-letter="A" class="is-active">A</li>
+                        <li data-letter="B">B</li>
+                        <li data-letter="V">V</li>
+                        <li data-letter="G">G</li>
+                        <li data-letter="D">D</li>
+                        <li data-letter="DJ">Đ</li>
+                        <li data-letter="E">E</li>
+                        <li data-letter="ZH">Ž</li>
+                        <li data-letter="Z">Z</li>
+                        <li data-letter="I">I</li>
+                        <li data-letter="J">J</li>
+                        <li data-letter="K">K</li>
+                        <li data-letter="L">L</li>
+                        <li data-letter="LJ">Lj</li>
+                        <li data-letter="M">M</li>
+                        <li data-letter="N">N</li>
+                        <li data-letter="NJ">Nj</li>
+                        <li data-letter="O">O</li>
+                        <li data-letter="P">P</li>
+                        <li data-letter="R">R</li>
+                        <li data-letter="S">S</li>
+                        <li data-letter="T">T</li>
+                        <li data-letter="TJ">Ć</li>
+                        <li data-letter="U">U</li>
+                        <li data-letter="F">F</li>
+                        <li data-letter="H">H</li>
+                        <li data-letter="C">C</li>
+                        <li data-letter="CH">Č</li>
+                        <li data-letter="DZ">Dž</li>
+                        <li data-letter="SH">Š</li>
+                    </ul>
+                </div>
+</div>
+
+            </div>
+        </div>
+        <!--footer-->
+    <div id="footer"></div>
+    <script type="text/javascript">
+        $.get("footer.html", function (data) {
+            $("#footer").replaceWith(data);
+        });
+    </script>
+
+
+        <!--Skripte-->
+        <script src="names.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -230,3 +230,11 @@ body{
     .names__wrapper .letters li.is-active, .names__wrapper .letters li:hover {
         color: #f66;
     }
+
+.footerg a{
+    text-decoration: none;
+}
+.footerg ul {
+  
+    padding:0px;
+}
