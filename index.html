@@ -10,8 +10,7 @@
     <!--Font-->
     <link href="https://fonts.googleapis.com/css?family=Varela&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
@@ -19,7 +18,7 @@
     <!--Navigacija pogledaj navigacija.html-->
     <div id="navig"></div>
     <script type="text/javascript">
-        $.get("navigacija.html", function (data) {
+        $.get("navigacija.html", function(data) {
             $("#navig").replaceWith(data);
         });
     </script>
@@ -30,24 +29,23 @@
             <div class="col-md-3 preporuka">
                 <h6>Postavi pitanje veterinaru</h6>
                 <p>
-                    Ukoliko vaš ljubimac ima zdravstveni problem, ili imate dilemu oko njegove nege, zdravlja ili
-                    ishrane. Pošaljite nam pitanje.
+                    Ukoliko vaš ljubimac ima zdravstveni problem, ili imate dilemu oko njegove nege, zdravlja ili ishrane. Pošaljite nam pitanje.
                     <i class="fa fa-user-md float-right " style="font-size:70px;"></i>
                     <a href="pitaj-veterinara.html" style="display: block; text-decoration: none "></a>
                 </p>
             </div>
             <script type="text/javascript">
-                $(document).ready(function () {
-                    $(".preporuka").click(function () {
+                $(document).ready(function() {
+                    $(".preporuka").click(function() {
                         window.location = $(this).find("a").attr("href");
                         return false;
                     });
-                });</script>
+                });
+            </script>
             <div class="offset-md-1 col-md-3 preporuka">
                 <h6>Azili za pse</h6>
                 <p>
-                    Ukoliko želite vernog prijatelja koji će vas pratiti kroz život, jedno od mesta
-                    na kojem ćete ga pronaći su azili i skloništa.
+                    Ukoliko želite vernog prijatelja koji će vas pratiti kroz život, jedno od mesta na kojem ćete ga pronaći su azili i skloništa.
                     <i class="fa fa-home float-right " style="font-size:70px;"></i>
                     <a href="azili-sklonista-za-pse.html" style="display: block; text-decoration: none "></a>
 
@@ -57,8 +55,7 @@
             <div class="offset-md-1 col-md-3 preporuka">
                 <h6>Veterinarske stanice</h6>
                 <p>
-                    Pronađite najbolje veterinrske ambulante, zakažite pregled kod veterinara i pomozite Vašem kućnom
-                    ljubimcu.
+                    Pronađite najbolje veterinrske ambulante, zakažite pregled kod veterinara i pomozite Vašem kućnom ljubimcu.
                     <i class="fa fa-medkit float-right " style="font-size:70px;"></i>
                     <a href="veterinarske-stanice.html" style="display: block; text-decoration: none "></a>
                 </p>
@@ -89,17 +86,15 @@
     </div>
     <!--naslovna oglasi-->
     <div class="container">
-        <h3 class="naslov"><u>Tražimo dom</u></h3>
-        <div class="card-deck">
+        <h3 class="naslov text-info"><u>Tražimo dom</u></h3>
+        <div class="card-deck text-info">
             <div class="card">
                 <img class="card-img-top" src="cssimg\dog2.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Drogon</h5>
-                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo pariatur et totam
-                        dolore deserunt, explicabo omnis distinctio quia iure, neque corrupti provident veritatis esse
-                        dolor dolorum, laudantium aperiam repellat nobis!</p>
+                    <p class="card-text ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo pariatur et totam dolore deserunt, explicabo omnis distinctio quia iure, neque corrupti provident veritatis esse dolor dolorum, laudantium aperiam repellat nobis!</p>
                     <p class="card-text"><small class="text-muted">
-                            <button type="button" class="btn btn-primary">Više informacija</button>
+                            <button type="button" class="btn btn-info">Više informacija</button>
                         </small></p>
                 </div>
             </div>
@@ -107,11 +102,9 @@
                 <img class="card-img-top" src="cssimg\dog1.png" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Viserion</h5>
-                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo pariatur et totam
-                        dolore deserunt, explicabo omnis distinctio quia iure, neque corrupti provident veritatis esse
-                        dolor dolorum, laudantium aperiam repellat nobis!</p>
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo pariatur et totam dolore deserunt, explicabo omnis distinctio quia iure, neque corrupti provident veritatis esse dolor dolorum, laudantium aperiam repellat nobis!</p>
                     <p class="card-text"><small class="text-muted">
-                            <button type="button" class="btn btn-primary">Više informacija</button>
+                            <button type="button" class="btn btn-info">Više informacija</button>
                         </small></p>
                 </div>
             </div>
@@ -119,28 +112,32 @@
                 <img class="card-img-top" src="cssimg\dog3.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Rhaegal</h5>
-                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo pariatur et totam
-                        dolore deserunt, explicabo omnis distinctio quia iure, neque corrupti provident veritatis esse
-                        dolor dolorum, laudantium aperiam repellat nobis!</p>
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo pariatur et totam dolore deserunt, explicabo omnis distinctio quia iure, neque corrupti provident veritatis esse dolor dolorum, laudantium aperiam repellat nobis!</p>
                     <p class="card-text"><small class="text-muted">
-                            <button type="button" class="btn btn-primary">Više informacija</button>
+                            <button type="button" class="btn btn-info">Više informacija</button>
                         </small></p>
                 </div>
             </div>
         </div>
         <h3 class="naslov mt-3 text-right">
-            <a href="#">Pogledaj sve</a>
+            <a href="#" class="text-decoration-none text-info">Pogledaj sve</a>
         </h3>
+    </div>
+    <!--Linija-->
+    <div class="container p-0 mb-5 mt-5">
+        <div class="hrline">
+            <img src="cssimg/sapa.png" alt="">
+        </div>
     </div>
     <!--Izaberi ime-->
     <a href="imena-za-pse.html" style="display: block; text-decoration: none ">
-        <div class="container izaberime mt-3">
+        <div class="container izaberime mt-3 border border-info rounded ">
             <div class="row">
                 <div class="col-md-3 mx-auto mt-5">
                     <img src="cssimg\ime.png" alt="izaberi ime za svog ljubimca" class="ime">
                 </div>
                 <div class="col-md-8 imetext">
-                    <div class="font-italic text-light text-center "><i>
+                    <div class="font-italic text-center text-info"><i>
                             <p class="h3">Kako da izaberete ime za vašeg psa?</p>
                             <br>
                             <p class="h5">Ako se razmišljate koje ime da date svom kućnom ljubimcu...</p>
@@ -152,17 +149,18 @@
         </div>
     </a>
     <!--kontakt-->
-    <div class="container kontakt">
+    <div class="container kontakt bg-info rounded">
         <div class="row">
-            <div class="col-xs-8">
-                <p class="text-light h4 ml-5">Da li vam treba pomoć ili imate pitanja?</p>
+            <div class="col-md-8">
+                <p class="text-light h2 ml-5">Da li vam treba pomoć ili imate pitanja?</p>
             </div>
-            <div class="col-xs-4 mx-auto ">
-                <button type="button" class="btn btn-primary">Kontaktirajte nas</button>
+            <div class="col-md-4 mx-auto">
+                <a href="kontakt.html">
+                    <button type="button" class="btn btn-light pr-5 pl-5 p-2">Kontaktirajte nas</button></a>
             </div>
         </div>
     </div>
-    <!--footer-->
+    <!--footer pogledaj footer.html-->
     <div id="footer"></div>
     <script type="text/javascript">
         $.get("footer.html", function (data) {

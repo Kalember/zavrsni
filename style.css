@@ -1,17 +1,21 @@
-*{
-    font-family: Roboto-Regular; 
+* {
+    font-family: Roboto-Regular;
 }
-body{
+
+body {
     background-color: whitesmoke!important;
 }
-.navigacija{
+
+.navigacija {
     border-bottom: solid 3px #17a2b8;
 }
-.nav-link{
+
+.nav-link {
     color: white;
     margin-right: 20px;
     text-decoration: none;
 }
+
 .efe::after {
     content: '';
     display: block;
@@ -20,137 +24,199 @@ body{
     background: #17a2b8;
     transition: width .3s;
 }
+
 .efe:hover::after {
     width: 100%;
     transition: width .3s;
 }
+
 .light-blue.darken-3 {
     background-color: #0277bd!important;
-    
 }
-.navl:hover{
+
+.navl:hover {
     background-color: darkblue;
     color: white;
 }
+
 .input-group-text {
     color: white !important;
     border: 0 !important;
     border-radius: 0.25rem 0 0 0.25rem !important;
 }
+
+
 /*Deo sa preporucenim linkovima*/
-.prep{
+
+.prep {
     margin-top: 20px;
 }
-.preporuka{
-    height: 200px;  
-    background-color: whitesmoke; 
+
+.preporuka {
+    height: 200px;
+    background-color: whitesmoke;
     text-align: left;
     box-shadow: 0px 0px 10px 10px lightgrey;
     color: #17a2b8;
 }
-.preporuka>h6{
+
+.preporuka>h6 {
     margin-top: 20px;
 }
+
 .preporuka>p {
     font-size: 15px;
     margin-top: 15px;
 }
-.preporuka:hover{
-    color:whitesmoke;
+
+.preporuka:hover {
+    color: whitesmoke;
     background-color: #17a2b8;
     cursor: pointer;
 }
 
-@media screen and (min-width: 1224px){
-   .preporuka {
-       margin-right: 20px;
-       margin-left: 20px;      
-   }
+@media screen and (min-width: 1224px) {
+    .preporuka {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
 }
-@media screen and (min-width: 400px){
+
+@media screen and (min-width: 400px) {
     .preporuka {
         margin-top: 20px;
         margin-right: 20px;
-        margin-left: 20px;   
+        margin-left: 20px;
     }
 }
+
+
 /*deo ispod slideshow-a*/
-.naslov{
+
+.naslov {
     font-style: italic;
     color: #7ee5ff;
     margin-bottom: 10px;
 }
-.ogl{
-    height: 200px;;
+
+.ogl {
+    height: 200px;
+    ;
     border: solid #7ee5ff 5px;
 }
+
 .card-img-top {
     width: 100%;
     height: 40vh;
     object-fit: cover;
-    }
-.izaberime{
-    width: 100%;
-    
-    background-color: #7ee5ff;
-    cursor:pointer;
 }
-.ime{
+
+.izaberime {
+    background-color: white;
+    width: 100%;
+    cursor: pointer;
+}
+
+.ime {
     opacity: 0.65;
     width: 250px;
     padding-bottom: 30px;
-    
 }
-.izaberime:hover img{
-    opacity: 1;
-}
-/*.ime:hover{
-    opacity: 1;
-}*/
 
-.imetext{
+.izaberime:hover img {
+    opacity: 1;
+}
+
+.imetext {
     margin-top: 80px;
-    align-items: center;}
+    align-items: center;
+}
 
-@media screen and (max-width: 600px){
-        .izaberime{
-		    text-align: center;
-        }
-        .ime {
-            width: 25%;
-            margin-top: 0px;
-        }
-        .imetext{
-            margin-top: 10px;
-            font-size: 10%;
-        }
+@media screen and (max-width: 600px) {
+    .izaberime {
+        text-align: center;
     }
-.kontakt{
+    .ime {
+        width: 25%;
+        margin-top: 0px;
+    }
+    .imetext {
+        margin-top: 10px;
+        font-size: 10%;
+    }
+}
+
+.kontakt {
     height: auto;
-    background-color: #7ee5ff;
+    background-color: #C45842;
     margin-top: 25px;
     margin-bottom: 25px;
     padding: 25px;
 }
-.foot{
-    background-color: #9bddee;
+
+@media (max-width: 576px) {
+    .kontakt {
+        text-align: center;
+    }
+    .kontakt p {
+        margin-left: 0px;
+    }
 }
+
+.hrline {
+    display: block;
+    overflow: hidden;
+    text-align: center;
+}
+
+.hrline:before,
+.hrline:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 50%;
+    border: #17a2b8;
+    border-top-style: solid;
+    border-top-width: 1px;
+}
+
+.hrline:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+.hrline:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+.hrline img {
+    vertical-align: middle;
+}
+
+
 /*imena za pse*/
-.imena{
+
+.imena {
     background-color: #77cee4e0;
 }
-.names{
+
+.names {
     background-color: white;
     box-shadow: 0px 0px 10px 10px lightgray;
     color: gray;
 }
-.names>p{
+
+.names>p {
     color: lightslategray;
 }
+
 .polovi {
     max-width: 530px;
     margin: 0 auto;
-    overflow: hidden;}
+    overflow: hidden;
+}
 
 .polovi li {
     display: inline-block;
@@ -162,6 +228,7 @@ body{
 .polovi li input[type=radio] {
     display: none;
 }
+
 .polovi li input[type=radio]+label {
     position: relative;
     cursor: pointer;
@@ -171,45 +238,50 @@ body{
     font-size: 1em;
     user-select: none;
 }
+
 .polovi li input[type=radio]+label .icon {
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin: auto;
-        top: -57px;
-        z-index: 1;
-        width: 27px;
-        height: 37px;
-        fill: wheat;
-    }
-.polovi li input[type="radio"] + label::after {
-        position: absolute;
-        content: "";
-        width: 80px;
-        height: 80px;
-        background-color:#9bddee;
-        top: -80px;
-        left: 0px;
-        right: 0px;
-        border-radius: 50%;
-        margin: auto;
-        transition: all 0.3s ease 0s;
-    }
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: -57px;
+    z-index: 1;
+    width: 27px;
+    height: 37px;
+    fill: wheat;
+}
+
+.polovi li input[type="radio"]+label::after {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 80px;
+    background-color: #9bddee;
+    top: -80px;
+    left: 0px;
+    right: 0px;
+    border-radius: 50%;
+    margin: auto;
+    transition: all 0.3s ease 0s;
+}
+
 .polovi li input[type=radio]:hover+label:after {
     background-color: blue;
 }
 
 .names .post__body {
-        border: 1px solid #ebeae8;
-        margin-top: 77px;
-        position: relative;
-        background: url(cssimg\psi.svg);
+    border: 1px solid #ebeae8;
+    margin-top: 77px;
+    position: relative;
+    background: url(cssimg\psi.svg);
+}
+
+@media (max-width: 991px) {
+    .names__wrapper {
+        padding: 50px 20px 105px;
     }
-@media (max-width: 991px){
-.names__wrapper {
-    padding: 50px 20px 105px;
-    
-}}
+}
+
 .names__wrapper .letters {
     display: table;
     margin: 0 auto;
@@ -217,6 +289,7 @@ body{
     overflow: hidden;
     font-family: Roboto-Regular;
 }
+
 .names__wrapper .letters li {
     font-size: 2.14286em;
     color: #613c4b;
@@ -226,15 +299,10 @@ body{
     width: 10%;
     text-align: center;
     cursor: pointer;
-    font-family: Roboto-Regular;}
-    .names__wrapper .letters li.is-active, .names__wrapper .letters li:hover {
-        color: #f66;
-    }
-
-.footerg a{
-    text-decoration: none;
+    font-family: Roboto-Regular;
 }
-.footerg ul {
-  
-    padding:0px;
+
+.names__wrapper .letters li.is-active,
+.names__wrapper .letters li:hover {
+    color: #f66;
 }
