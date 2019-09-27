@@ -56,7 +56,7 @@ body {
     height: 200px;
     background-color: whitesmoke;
     text-align: left;
-    box-shadow: 0px 0px 10px 10px lightgrey;
+    box-shadow: 0px 0px 10px 10px #17a3b821;
     color: #17a2b8;
 }
 
@@ -73,6 +73,8 @@ body {
     color: whitesmoke;
     background-color: #17a2b8;
     cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 10px lightgray;
 }
 
 @media screen and (min-width: 1224px) {
@@ -162,6 +164,9 @@ body {
         margin-left: 0px;
     }
 }
+
+
+/* horizontalna linija*/
 
 .hrline {
     display: block;
@@ -305,4 +310,40 @@ body {
 .names__wrapper .letters li.is-active,
 .names__wrapper .letters li:hover {
     color: #f66;
+}
+
+
+/*sidebar*/
+
+.sidebars {
+    margin-top: 20px;
+    margin-right: 0px;
+    padding-top: 10px;
+    border-left: solid 3px #17a2b8;
+}
+
+@media (max-width: 576px) {
+    .sidebars {
+        border-left: none;
+        border-top: solid 1px #17a2b8;
+    }
+    .sidebar {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+}
+
+.sidebar {
+    background-color: white;
+    margin-right: 0px;
+    margin-left: 10px;
+    box-shadow: 0px 0px 10px 10px #17a3b821;
+    color: #17a2b8;
+}
+
+.sidebar:hover {
+    background-color: #17a2b8;
+    color: white;
+    box-shadow: 0px 0px 10px 10px lightgray;
+    border-radius: 10px;
 }

@@ -10,8 +10,7 @@
     <!--Font-->
     <link href="https://fonts.googleapis.com/css?family=Varela&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="form.js"></script>
 </head>
@@ -20,19 +19,17 @@
     <!--Navigacija pogledaj navigacija.html-->
     <div id="navig"></div>
     <script type="text/javascript">
-        $.get("navigacija.html", function (data) {
+        $.get("navigacija.html", function(data) {
             $("#navig").replaceWith(data);
         });
     </script>
     <!--kraj navigacije-->
     <!--postavi pitanje-->
-    <div class="container">
+    <div class="container mb-5">
         <div class="row">
-            <div class="col-md-7 col-md-offset-3 text-center text-info">
+            <div class="col-md-7 text-center text-info">
                 <p class="h1 mt-3 ">Pitajte veterinara</p>
-                <p>Ukoliko ste ponosni vlasnik i ukoliko vaš ljubimac ima zdravstveni problem, a vi dilema oko njegove
-                    nege, zdravlja ili ishrane, pošaljite nam pitanje.
-                    Na svako postavljeno pitanje razmatraju stručnjaci <a href="#">veterinarske stanice</a>
+                <p>Ukoliko ste ponosni vlasnik i ukoliko vaš ljubimac ima zdravstveni problem, a vi dilema oko njegove nege, zdravlja ili ishrane, pošaljite nam pitanje. Na svako postavljeno pitanje razmatraju stručnjaci <a href="#">veterinarske stanice</a>
                 </p>
                 <div class="border border-info rounded p-3 mt-5">
                     <p class="h4 p-3">Postavi pitanje</p>
@@ -53,8 +50,7 @@
                         <div class="row">
                             <div class="col-sm-12 form-group">
                                 <label for="message">Vaše pitanje:</label>
-                                <textarea class="form-control" type="textarea" name="message" id="message"
-                                    maxlength="6000" rows="7"></textarea>
+                                <textarea class="form-control" type="textarea" name="message" id="message" maxlength="6000" rows="7"></textarea>
                             </div>
                         </div>
 
@@ -64,30 +60,35 @@
                             </div>
                         </div>
                     </form>
-                    <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Vaša poruka je uspešno poslata</h3> </div>
-                    <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Žao nam je, prilikom slanja pojavio se problem </div>
+                    <div id="success_message" style="width:100%; height:100%; display:none; ">
+                        <h3>Vaša poruka je uspešno poslata</h3>
+                    </div>
+                    <div id="error_message" style="width:100%; height:100%; display:none; ">
+                        <h3>Error</h3> Žao nam je, prilikom slanja pojavio se problem
+                    </div>
                 </div>
             </div>
+            <!--Poziva sidebar-->
+            <div id="sidebar"></div>
+            <script type="text/javascript">
+                $.get("sidebar.html", function(data) {
+                    $("#sidebar").replaceWith(data);
+                });
+            </script>
         </div>
     </div>
 
     <!--footer-->
     <div id="footer"></div>
     <script type="text/javascript">
-        $.get("footer.html", function (data) {
+        $.get("footer.html", function(data) {
             $("#footer").replaceWith(data);
         });
     </script>
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>
