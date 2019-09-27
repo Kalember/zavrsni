@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>O nama</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css?family=Varela&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!--Navigacija pogledaj navigacija.html-->
+    <div id="navig"></div>
+    <script type="text/javascript">
+        $.get("navigacija.html", function(data) {
+            $("#navig").replaceWith(data);
+        });
+    </script>
+    <div class="container mt-3 p-0 mb-5">
+        <div class="row">
+            <div class="col-md-12 col-12">
+                <img src="cssimg/doglover.jpg" alt="o nama" class="img-fluid">
+            </div>
+            <!--Linija-->
+            <div class="container p-0 mb-5 mt-5">
+                <div class="hrline">
+                    <img src="cssimg/sapa.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-7 text-info ml-3">
+                <p class="h1 mt-5">O nama</p>
+                <p class="h3 font-italic">sve što bi trebalo da znate</p>
+                <p class="h5 mt-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reiciendis quasi unde tempora consequatur maiores cumque earum id, rerum consequuntur impedit aliquid, iusto fuga et aut sequi reprehenderit. Quas, ipsam. Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit. Magni incidunt, nisi ex sint tempora in quis cum culpa perspiciatis temporibus ullam a? Fugit esse harum eligendi omnis modi eos inventore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero totam adipisci
+                    dolor deleniti expedita numquam perspiciatis temporibus ea, quam error. Dignissimos id ducimus placeat animi totam quas non eius ad! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate repudiandae quisquam hic earum
+                    deleniti consequuntur aperiam ipsum, mollitia, non placeat adipisci accusamus, provident inventore? Exercitationem provident voluptatum voluptas perferendis ex?
+                </p>
+            </div>
+            <div class="col-md-4 mt-5 text-center">
+                <p class="h1 text-info">LOGO</p>
+                <div class="text-info h5">
+                    <p>Snupijeva 1</p>
+                    <p>Beograd</p>
+                    <p>011/000-000</p>
+                </div>
+            </div>
+        </div>
+        <!--Linija-->
+        <div class="container p-0 mb-5 mt-5">
+            <div class="hrline">
+                <img src="cssimg/sapa.png" alt="">
+            </div>
+        </div>
+        <!--kontakt-->
+        <div class="container kontakt bg-info rounded">
+            <div class="row">
+                <div class="col-md-8">
+                    <p class="text-light h2 ml-5">Da li vam treba pomoć ili imate pitanja?</p>
+                </div>
+                <div class="col-md-4 mx-auto">
+                    <a href="kontakt.html">
+                        <button type="button" class="btn btn-light pr-5 pl-5 p-2">Kontaktirajte nas</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer pogledaj footer.html-->
+    <div id="footer"></div>
+    <script type="text/javascript">
+        $.get("footer.html", function(data) {
+            $("#footer").replaceWith(data);
+        });
+    </script>
+    <!--Skripte-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
