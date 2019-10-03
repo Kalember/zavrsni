@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.8.4
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1:3306
+- Generation Time: Oct 03, 2019 at 06:42 PM
+- Server version: 5.7.24
+- PHP Version: 7.2.14
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="dogdb" collation="utf8_unicode_ci" charset="utf8">
+            <pma:table name="azili">
+                CREATE TABLE `azili` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `naziv` text COLLATE utf8_unicode_ci NOT NULL,
+                  `mesto` text COLLATE utf8_unicode_ci NOT NULL,
+                  `adresa` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+                  `telefon` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+                  `email` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+                  `opis` text COLLATE utf8_unicode_ci NOT NULL,
+                  `slika` blob NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'dogdb'
+    -->
+    <database name="dogdb">
+        <!-- Table azili -->
+        <table name="azili">
+            <column name="id">1</column>
+            <column name="naziv">Test</column>
+            <column name="mesto">Beograd</column>
+            <column name="adresa">Beogradska 2</column>
+            <column name="telefon">011/123123123</column>
+            <column name="email">test@test.rs</column>
+            <column name="opis">Javno preduzece za sklonista se bavi zadacima: organizacije izgradnje, odrzavanja i tehnicke kontrole javnih i blokovskih sklonista na teritoriji Republike Srbije       </column>
+            <column name="slika">Untitled-2.png</column>
+        </table>
+        <table name="azili">
+            <column name="id">2</column>
+            <column name="naziv">tanja</column>
+            <column name="mesto">Sombor</column>
+            <column name="adresa">Ratka mladica</column>
+            <column name="telefon">011666666</column>
+            <column name="email">666@666.rs</column>
+            <column name="opis">                                    ghghhg</column>
+            <column name="slika">slika1.jpg</column>
+        </table>
+        <table name="azili">
+            <column name="id">3</column>
+            <column name="naziv">Azil za pse</column>
+            <column name="mesto">Beograf</column>
+            <column name="adresa">Radnicka 6</column>
+            <column name="telefon">011/222-333</column>
+            <column name="email">azilizapse@gmail.com</column>
+            <column name="opis">Mi smo Azil za bolesne i napuÅ¡tene mace &quot;DÅ¾esika&quot; i potrebna nam je vaÅ¡a pomoÄ‡ da vakciniÅ¡emo 86 maca protiv besnila i ...                                    </column>
+            <column name="slika">Array</column>
+        </table>
+        <table name="azili">
+            <column name="id">4</column>
+            <column name="naziv">test</column>
+            <column name="mesto">test</column>
+            <column name="adresa">test</column>
+            <column name="telefon">00000000</column>
+            <column name="email">test@test.rs</column>
+            <column name="opis">                            hhh        </column>
+            <column name="slika"></column>
+        </table>
+        <table name="azili">
+            <column name="id">5</column>
+            <column name="naziv">egt</column>
+            <column name="mesto">te</column>
+            <column name="adresa">te</column>
+            <column name="telefon">011</column>
+            <column name="email">dalibor@dalibor.rs</column>
+            <column name="opis">       The PHP Manual is available online in a selection of languages. Please pick a language from the list below.
+ </column>
+            <column name="slika">admin/azili/IMG_3615.JPG</column>
+        </table>
+        <table name="azili">
+            <column name="id">6</column>
+            <column name="naziv">gg</column>
+            <column name="mesto">gg</column>
+            <column name="adresa">gg</column>
+            <column name="telefon">0111</column>
+            <column name="email">daliboe@dalibor.rs</column>
+            <column name="opis">                      The PHP Manual is available online in a selection of languages. Please pick a language from the list below.
+
+More information about php.net URL shortcuts by visiting our URL howto page.         </column>
+            <column name="slika">admin/azili/bl.jpg</column>
+        </table>
+        <table name="azili">
+            <column name="id">7</column>
+            <column name="naziv">test</column>
+            <column name="mesto">tes</column>
+            <column name="adresa">ndnd</column>
+            <column name="telefon">011q</column>
+            <column name="email">011@011.rs</column>
+            <column name="opis">                      hdhfd              </column>
+            <column name="slika">azilipozadina.jpg</column>
+        </table>
+        <table name="azili">
+            <column name="id">8</column>
+            <column name="naziv">vh</column>
+            <column name="mesto">hd</column>
+            <column name="adresa">hdf</column>
+            <column name="telefon">011</column>
+            <column name="email">w@a.rs</column>
+            <column name="opis">                         ndfhdjg           </column>
+            <column name="slika">azili/snowflakes.png</column>
+        </table>
+    </database>
+</pma_xml_export>
