@@ -5,31 +5,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Azili skolonista za pse</title>
     <link href="style.css" type="text/css" rel="stylesheet">
     <!--Font-->
     <link href="https://fonts.googleapis.com/css?family=Varela&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="footer.js"></script>
 </head>
 
 <body>
     <!--Navigacija pogledaj navigacija.html-->
     <div id="navig"></div>
     <script type="text/javascript">
-        $.get("HTML files\navigacija.html", function(data) {
+        $.get("navigacija.html", function(data) {
             $("#navig").replaceWith(data);
         });
     </script>
     <!--kraj navigacije-->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="card-deck text-info col-md-12">
+                <div class="row">
+                    <div id="printcard" class="card col-md-12"></div>
+                </div>
+            </div>
+
+            <script type="text/javascript">
+                $(document).ready(function() {
+
+                    $.getJSON('azili_data.php', function(data) {
+
+                        var printcard = $('#printcard');
+                        data.forEach(function(object) {
+
+                            var content = $(
+                                //*'<div class="card">' +**/
+                                '<div class="col-md-3">' +
+                                '<img class="card-img-top" src="' + object.slika + '" alt="">' +
+                                '<div class="card-body">' +
+                                '<h5 class="card-title">' + object.naziv + '</h5>' +
+                                '<h5 class="card-title">' + object.mesto + '</h5>' +
+                                '<p class="card-text ">' + object.adresa + '</p>' +
+                                '<p class="card-text ">' + object.telefon + '</p>' +
+                                '<p class="card-text ">' + object.email + '</p>' +
+                                '<p class="card-text ">' + object.opis + '</p>' +
+                                '</div>' +
+                                '</div>' +
+                                '</div>');
+                            printcard.append(content);
+
+                        });
+                    });
+                });
+            </script>
+        </div>
+    </div>
+    </div>
+
+
     <!--footer-->
     <div id="footer"></div>
-    <script type="text/javascript">
-        $.get("footer.html", function(data) {
-            $("#footer").replaceWith(data);
-        });
-    </script>
 </body>
 
 </html>
