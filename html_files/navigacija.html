@@ -1,0 +1,208 @@
+<div class="container  mt-1 p-0">
+    <div class="row mx-auto ">
+        <div class="col-12 p-0">
+            <nav class="navbar navbar-expand-lg navigacija">
+                <button class="navbar-toggler custom-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="navbar-toggler-icon navbar-dark"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="navbar-nav mt-lg-0 ">
+                        <li class="nav-item active ">
+                            <a class="nav-link text-info efe" href="index.html">POČETNA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-info efe" href="onama.html">O NAMA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-info efe" href="kontakt.html">KONTAKT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-info efe" href="#">UDOMI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-info efe" href="#">POSTAVI OGLAS</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="text-center nav navbar-nav navbar-right" id="LogREGbtn">
+                    <a href="" class="btn btn-info btn-rounded my-3" data-toggle="modal" data-target="#modalLRForm"><i
+                            class="fa fa-fw fa-user pr-1"></i>
+                        Prijava/registracija</i></a>
+                </div>
+                <!--prijava/registracija-->
+                <div class="modal fade" data-backdrop="static" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog cascading-modal" role="document">
+                        <div class="modal-content">
+                            <div class="modal-c-tabs">
+                                <ul class="nav nav-pills nav-justified bg-info m-2" role="tablist">
+                                    <li class="w-50 text-center m-0 tabslink ">
+                                        <a class="nav-link navl h5 m-0" data-toggle="tab" href="#panel1" id="panel1activate" role="tab"><i
+                                                class="fa fa-sign-in" aria-hidden="true"></i>
+                                            Prijava</a>
+                                    </li>
+                                    <li class="w-50 text-center tabslink h5 m-0">
+                                        <a class="nav-link navl m-0" data-toggle="tab" href="#panel8" role="tab" id="registracija"><i class="fa fa-user-plus"></i>
+                                            Registracija</a>
+                                    </li>
+                                </ul>
+                                <!--paneli-->
+                                <div class="tab-content">
+                                    <!--Panel 1-->
+                                    <div class="tab-pane fade in show active" id="panel1" role="tabpanel">
+                                        <form id="login_form">
+                                            <div class="modal-body mb-1">
+                                                <div class="input-group p-2">
+                                                    <label id="registration_succes-hide" data-error="wrong" data-success="right" for="modalLRInput10">Ukoliko imate registrovan nalog prijavite
+                                                    se sa email adresom.</label>
+                                                    <label id="registration_succes" data-error="wrong" data-success="right" for="modalLRInput10"></label>
+                                                    <br>
+                                                    <div class="input-group-append w-100">
+                                                        <span class="input-group-text m-0 bg-info rounded" style="color: white"><i class="fa fa-envelope"
+                                                            aria-hidden="true"></i></span>
+                                                        <input type="email" id="modalLRInput10" id='emailprijava' name="email" class="form-control validate" placeholder="example@example.com">
+                                                    </div>
+                                                </div>
+                                                <div class="input-group p-2">
+                                                    <label data-error="wrong" data-success="right" for="modalLRInput11">Unesite vašu lozinku</label>
+                                                    <br>
+                                                    <div class="input-group-append w-100">
+                                                        <span class="input-group-text m-0 bg-info rounded" style="color: white"><i class="fa fa-key"
+                                                            aria-hidden="true"></i></span>
+                                                        <input type="password" id="modalLRInput11" id="passwordregistracija" name="password" class="form-control validate" placeholder="***********">
+                                                    </div>
+                                                </div>
+                                                <div class="text-center mt-2">
+                                                    <button class="btn btn-info" id="login_user">Prijava<i
+                                                        class="fa fa-sign-in ml-1"></i></button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <!--Footer-->
+                                        <div class="modal-footer m-2">
+                                            <div class="options text-center text-md-left mt-1">
+                                                <p>Nemaš nalog? <a data-toggle="tab" href="#panel8" role="tab" class="blue-text">Registruj se.</a></p>
+                                                <p>Zaboravljena lozinka? <a href="#pwdModal" data-toggle="modal" data-dismiss="modal" data-target="#pwdModal" class="blue-text">Resetuj lozinku.</a>
+                                                </p>
+                                            </div>
+                                            <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Izađi</button>
+                                        </div>
+
+                                    </div>
+                                    <!--/Panel 1-->
+                                    <!--Panel 8 Registracija-->
+                                    <div class="tab-pane fade" id="panel8" role="tabpanel">
+                                        <form id="sign_up_form">
+                                            <div class="modal-body">
+                                                <div id="response"></div>
+                                                <div class="input-group p-2">
+                                                    <label data-error="wrong" data-success="right" for="modalLRInput12">Unesite vase podatke</label>
+                                                    <br>
+                                                    <div class="input-group-append w-100 mb-3 ">
+                                                        <span class="input-group-text m-0 bg-info rounded" style="color: white"><i class="fa fa-user"
+                                                            aria-hidden="true"></i></span>
+                                                        <input type="text" id="modalLRInput12" name="firstname" id="firstname" class="form-control validate" placeholder="Unesite vaše ime" required>
+                                                    </div>
+                                                    <div class="input-group-append w-100 mb-3 ">
+                                                        <span class="input-group-text m-0 bg-info rounded" style="color: white"><i class="fa fa-user"
+                                                                aria-hidden="true"></i></span>
+                                                        <input type="text" id="modalLRInput12" name="lastname" id="lastname" class="form-control validate" placeholder="Unesite vaše prezime" required>
+                                                    </div>
+                                                    <br>
+                                                    <label data-error="wrong" data-success="right" for="modalLRInput12">Unesite vašu email adresu</label>
+                                                    <div class="input-group-append w-100 mb-3">
+                                                        <span class="input-group-text m-0 bg-info rounded" style="color: white"><i
+                                                            class="fa fa-envelope prefix"></i></span>
+                                                        <input type="email" name="email" id="email" id="modalLRInput12" class="form-control validate" placeholder="example@example.com" required>
+                                                    </div>
+                                                    <label data-error="wrong" data-success="right" for="modalLRInput13">Unesite lozinku</label>
+                                                    <div class="input-group-append w-100 mb-3">
+                                                        <span class="input-group-text m-0 bg-info rounded" style="color: white"><i class="fa fa-key prefix"></i></span>
+                                                        <input type="password" name="password" id="password" id="modalLRInput13" class="form-control validate" placeholder="********">
+                                                    </div>
+                                                    <!--<label data-error="wrong" data-success="right" for="modalLRInput14">Ponovo unesi lozinku</label>
+                                                    <div class="input-group-append w-100 mb-3">
+                                                        <span class="input-group-text m-0 bg-info rounded" style="color: white"><i class="fa fa-key prefix"></i></span>
+                                                        <input type="password" id="modalLRInput14" class="form-control validate" placeholder="********">
+                                                    </div>-->
+                                                </div>
+                                                <div class="text-center form-sm mt-2">
+                                                    <button class="btn btn-info" id="registracijaSubmit">Registruj se<i
+                                                        class="fa fa-sign-in ml-2"></i></button>
+                                                </div>
+                                        </form>
+                                        </div>
+                                        <!--Footer-->
+                                        <div class="modal-footer m-2">
+                                            <div class="options text-right">
+                                                <p class="pt-1">Već imaš nalog<a href="#panel1" role="tab" data-toggle="tab" class="blue-text ml-1">Prijavi se</a></p>
+                                            </div>
+                                            <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Izađi</button>
+                                        </div>
+                                    </div>
+                                    <!--/.Panel 8-->
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="navbar nav " id="logovanKorisnik" style="display: none;">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Ime usera
+                                </button>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Moj nalog</a>
+                            <a class="dropdown-item" href="#">Moji oglasi</a>
+                            <a class="dropdown-item" href="#">KOrisnicka podrska</a>
+                            <div class="dropdown-divider"></div>
+                            <a id="logout" class="dropdown-item" href="#">Odjava</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <!--/kraj prijave -->
+    </div>
+    <!--Zaboravljena lozinka-->
+    <div id="pwdModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content p-2">
+                <div class="modal-header text-center">
+                    <p class="h3 mx-auto ">Problemi u toku prijave?</p>
+                </div>
+                <div class="modal-body">
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="text-center">
+                                    <p>Da resetuješ lozinku, upiši e-mail koji koristiš za prijavu
+                                    </p>
+                                    <div class="panel-body">
+                                        <fieldset>
+                                            <div class="form-group">
+                                                <input class="form-control validate" placeholder="example@example.rs" name="email" type="email">
+                                            </div>
+                                            <input class="btn btn-lg btn-primary btn-block" value="Nastavi" type="submit">
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="col-md-12">
+                        <button class="btn" data-dismiss="modal" aria-hidden="true"> <a href="index.html"> Povratak
+                                na početnu stranu</a></button>
+                    </div>
+                </div>
+            </div>
+            </nav>
+        </div>
+    </div>
+</div>
+</div>
+</nav>
