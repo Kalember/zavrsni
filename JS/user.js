@@ -58,9 +58,6 @@ $(document).ready(function() {
                 $('#modalLRForm').modal('toggle');
                 $('#LogREGbtn').hide();
                 $("#logovanKorisnik").show();
-
-
-
             },
             error: function(xhr, resp, text) {
                 $('#registration_succes-hide').hide();
@@ -71,14 +68,12 @@ $(document).ready(function() {
         return false;
     });
     $("#logout").on('click', function() {
+        $('#LogREGbtn').show();
+        $("#logovanKorisnik").hide();
         showLoginPage();
-
-        $('#response').html("<div class='alert alert-info'>Otisao si.</div>");
     });
 
     function showLoginPage() {
-        //logout.php fajl za uklanjanje tokena sa servera
-        // ukloni token
-        setCookie("jwt", "", 1);
+        setCookie("jwt", '', 0);
     }
 });

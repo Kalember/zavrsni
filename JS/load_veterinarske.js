@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $.getJSON('azili_data.php', function(data) {
+    $.getJSON('veterinarske_data.php', function(data) {
 
         var printcard = $('#printcard');
         var i = 0;
