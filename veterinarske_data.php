@@ -1,7 +1,7 @@
 <?php
 include ('php/connect.php');
 
-$query = "SELECT * FROM azili ORDER BY id DESC";
+$query = "SELECT * FROM veterinarske_stanice ORDER BY id DESC";
 $result = mysqli_query($connection, $query) or die("SQL Error 1: " . mysqli_error($connection));
 while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
     $azili[] = array(
