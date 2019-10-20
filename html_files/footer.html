@@ -29,14 +29,16 @@
                 <h4>Budite u toku...</h4>
                 <p>Ostavite svoju email adresu kako biste dobijali najnovije informacije.</p>
                 <p>
-                    <form action="php/newsletter.php" method="post" id="subscribe">
+                    <form id="subscribe" method="POST" action="php/newsletter.php">
                         <div class="input-group-append w-100 mb-3">
                             <span class="input-group-text m-0 bg-info rounded" style="color: white"><i
                                     class="fa fa-envelope prefix"></i></span>
-                            <input type="email" name="email" id="email" class="form-control validate" placeholder="Unesite vašu email adresu" required>
+                            <input required type="email" name="email" id="email" class="new_email form-control validate" placeholder="Unesite vašu email adresu" />
                         </div>
+                        <div id="fail"></div>
+                        <div id="state"></div>
 
-                        <button type="submit" name="submit" id="submit" value="submit" class="btn btn-info pr-5 pl-5">Pošalji</button>
+                        <button type="submit" name="submit" id="send" value="submit" class="btn btn-info pr-5 pl-5">Pošalji</button>
                     </form>
                 </p>
                 <h4>...ili nas pratite na društvenim mrežama</h4>
