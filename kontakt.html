@@ -16,10 +16,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-serialize-object/2.5.0/jquery.serialize-object.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="jquery-cookie/jquery.cookie.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <!--JS-->
     <script src="js/load_html_files.js"></script>
     <script src="js/load_azili_data.js"></script>
-    <script src="js/user.js"></script>
+
 </head>
 
 <body>
@@ -31,18 +33,21 @@
                 <div class="col-md-12">
                     <div class="control-group">
                         <p class="h4 text-info text-center mb-3">Budite slobodni da nam se obratite ukoliko imate bilo kakva pitanja.</p>
-                        <div class="levo">
-                            <input class="kontakt_forma" type="text" name="kontakt_ime" id="kontakt_ime_i_prezime" placeholder="Vaše ime i prezime" required>
-                        </div>
-                        <div class="levo">
-                            <input class="kontakt_forma" type="email" name="kontakt_email" id="kontakt_email" placeholder="E-mail" required>
-                        </div>
-                        <div class="levo">
-                            <textarea name="poruka_poruka" id="kontakt_poruka" placeholder="Poruka" required rows="2" cols="20"></textarea>
-                        </div>
-                        <div class="levo text-center">
-                            <button class="btn btn-info pl-5 pr-5" name="kontakt_btn" id="kontakt_btn">Pošalji</button>
-                        </div>
+                        <form action="" id="form">
+                            <div class="levo">
+                                <input class="kontakt_forma" type="text" name="kontakt_ime" id="kontakt_ime" placeholder="Vaše ime i prezime" required>
+                            </div>
+                            <div class="levo">
+                                <input class="kontakt_forma" type="email" name="kontakt_email" id="kontakt_email" placeholder="E-mail" required>
+                            </div>
+                            <div class="levo">
+                                <textarea name="poruka_poruka" id="kontakt_poruka" placeholder="Poruka" required rows="2" cols="20"></textarea>
+                            </div>
+                            <label id="info"></label>
+                            <div class="levo text-center">
+                                <button class="btn btn-info pl-5 pr-5" name="kontakt_btn" id="submit">Pošalji</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -63,5 +68,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
+
+<script src="js/newsletter.js"></script>
+<script src="js/contact_form.js">
+</script>
 
 </html>

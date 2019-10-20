@@ -253,7 +253,7 @@ body {
     z-index: 1;
     width: 27px;
     height: 37px;
-    fill: wheat;
+    fill: white;
 }
 
 .polovi li input[type="radio"]+label::after {
@@ -261,7 +261,7 @@ body {
     content: "";
     width: 80px;
     height: 80px;
-    background-color: #9bddee;
+    background-color: #5bc0de;
     top: -80px;
     left: 0px;
     right: 0px;
@@ -271,7 +271,7 @@ body {
 }
 
 .polovi li input[type=radio]:hover+label:after {
-    background-color: blue;
+    background-color: #C45842;
 }
 
 .names .post__body {
@@ -391,4 +391,57 @@ body {
 #cardddd {
     margin: 0px;
     padding: 0px
+}
+
+
+/*animacija za stranu sa imenima za pse*/
+
+.spinner {
+    margin: 100px auto 0;
+    width: 200px;
+    text-align: center;
+}
+
+.spinner>div {
+    width: 32px;
+    height: 32px;
+    background-color: #17a2b8;
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.4s ease-in-out both;
+    animation: sk-bouncedelay 1.4s ease-in-out both;
+}
+
+.spinner .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+    0%,
+    80%,
+    100% {
+        -webkit-transform: scale(0)
+    }
+    40% {
+        -webkit-transform: scale(1.0)
+    }
+}
+
+@keyframes sk-bouncedelay {
+    0%,
+    80%,
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    40% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+    }
 }

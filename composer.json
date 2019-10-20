@@ -1,0 +1,7 @@
+{
+    "name": "my application",
+    "description": "my description",
+    "require": {
+        "sendgrid/sendgrid": "~7"
+    }
+}
