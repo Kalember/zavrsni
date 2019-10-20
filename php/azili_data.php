@@ -1,5 +1,5 @@
 <?php
-include ('php/connect.php');
+include ('connect.php');
 
 $query = "SELECT * FROM azili ORDER BY id DESC";
 $result = mysqli_query($connection, $query) or die("SQL Error 1: " . mysqli_error($connection));

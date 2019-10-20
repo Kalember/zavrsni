@@ -1,10 +1,11 @@
-<?php 
+<?php
+ 
 $sql = new mysqli('localhost', 'root','', 'dogdb');
 
 if ($sql->connect_error) { // konektovan ?
     die("Connection failed: " . $sql->connect_error);}
-
 $email= mysqli_real_escape_string($sql, $_POST['email']);
+
 function test_input($data) {
     $data = trim($data);
     $data = stripslashes($data);
@@ -13,11 +14,10 @@ function test_input($data) {
 }
 $msg = 'uspesna prijava';
 if(isset($_POST['email'])){
-    $email = test_input($_POST["email"]);
+    $email = test_input($_POST['email']);
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
   $emailErr = "Neispravan format adrese";
 }
-
 }
 $query= "INSERT INTO newsletter (email) VALUES ('$email')"; 
  
@@ -27,3 +27,24 @@ or die ("Error querying database");
 echo '<script type="text/javascript">alert("' . $msg . '")</script>'; 
  
 mysqli_close($sql);
+
+
+
+/*
+$connection = new mysqli('localhost', 'root', '', 'dogdb');
+
+if ($connection->connect_error) { // Check connection
+ die("Connection failed: " . $connection->connect_error);
+} 
+
+
+$email_address = mysqli_real_escape_string($connection, $_POST['email']);
+if(isset($_POST['email']))
+{
+	
+	
+		$sql="INSERT INTO `newsletter` (`email`) VALUES ('$email_address')";
+		echo "<div class='success'><h3>You have successfully subscribed to this newsletter.</h3></div>";
+	
+}*/
+?>
