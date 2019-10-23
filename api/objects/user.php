@@ -78,6 +78,12 @@ function emailExists(){
     // korisnik ne postoji
     return false;
 }
+
+public function updatePassword($email, $password){
+    //nadji korisnika po email-u
+
+    //ako postoji izvrsi update sa novom sifrom
+}
  
 // update korisnikovih podataka ostalo da se zavrsi i prepravi mozda ovo i radi na kraju
 public function update(){

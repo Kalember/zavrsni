@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Oct 23, 2019 at 05:16 PM
+-- Generation Time: Oct 23, 2019 at 09:52 PM
 -- Server version: 5.7.24
 -- PHP Version: 7.2.14
 
@@ -1092,7 +1092,7 @@ CREATE TABLE IF NOT EXISTS `newsletter` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `email` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=139 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=141 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `newsletter`
@@ -1105,7 +1105,9 @@ INSERT INTO `newsletter` (`id`, `email`) VALUES
 (135, 'ggg@ggg.rs'),
 (136, 'ggg@ggg.rs'),
 (137, 'ggg@ggg.rs'),
-(138, 'ghgfhj.hfghg@hjt.rs');
+(138, 'ghgfhj.hfghg@hjt.rs'),
+(139, 'daca@daca.rs'),
+(140, 'bane@bane.rs');
 
 -- --------------------------------------------------------
 
@@ -1140,7 +1142,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `created` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `modified` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=132 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=133 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `users`
@@ -1153,10 +1155,11 @@ INSERT INTO `users` (`id`, `firstname`, `lastname`, `email`, `password`, `create
 (125, 'Dalibor', 'Kalember', 'daliborkl@yahoo.com', '$2y$10$HPIXMi.uiWHQGme/Jxg77engQqSdfbmb/E.iGvC1gZvRQUwDw8Q/O', '2019-10-13 10:56:14', '2019-10-13 10:56:14'),
 (126, '123456', '123456', '123456@123456.com', '$2y$10$CHP0slstdN68tKVeFc76Q.H2wCyy/s/s14Ud6O6rGGdqDiVcTbLZq', '2019-10-13 11:07:52', '2019-10-13 11:07:52'),
 (127, 'tra', 'tra', 'tra@tra.com', '$2y$10$CDNE.RvCe56eMAINhlgFWu4PhMYsGzppmEEzEwWvGVmbBPttFaMMm', '2019-10-13 11:12:50', '2019-10-13 11:12:50'),
-(128, 'daca', 'daca', 'daca@daca.rs', '$2y$10$aKsQsqBjJUcOSlDDwmr.vuDeqH69cdMwb5nNPgIBXomPThCJZYq/6', '2019-10-14 19:38:37', '2019-10-14 19:38:37'),
+(128, 'Rajko', 'Bane', 'daca@daca.rs', '$2y$10$6QdDfoIqzIQ1hH.RDHFS5.AQu9QD7JA3G6bujt2jUTgn7xNbjUlWS', '2019-10-14 19:38:37', '2019-10-14 19:38:37'),
 (129, 'Bane', 'Bane', 'bane@bane.rs', '$2y$10$xOhmdQE.YluSbq3c7RiLfOGunbSNnjdqOr.yb3T1yWAR.7jyvmbXm', '2019-10-19 16:55:15', '2019-10-19 16:55:15'),
 (130, 'Zdravk', 'Pupovac', 'zdravkopupovac@gmail.com', '$2y$10$T02VvQ6/RMwl0pBTXbpSXumvmYAm9GtMskewjMnEOx1F38qsfoIRq', '2019-10-20 20:24:01', '2019-10-20 20:24:01'),
-(131, 'Dalibor', 'Kalember', 'dalibor.kalember@grafartdoo.rs', '$2y$10$TKmGwzUqtJMC31rbyHZH3.v5FYwLD0dTVpW6u/2o50J5wRBjhVQ7W', '2019-10-22 19:08:35', '2019-10-22 19:08:35');
+(131, 'Dalibor', 'Kalember', 'dalibor.kalember@grafartdoo.rs', '$2y$10$TKmGwzUqtJMC31rbyHZH3.v5FYwLD0dTVpW6u/2o50J5wRBjhVQ7W', '2019-10-22 19:08:35', '2019-10-22 19:08:35'),
+(132, 'Dalibor', 'Kalember', 'daliborkalember@gmail.com', '$2y$10$JhAyY09mo6OYgK9gI2rB8e28jH0u1YhmnmuJdjXc7LB7YD70gjCxO', '2019-10-23 20:13:57', '2019-10-23 20:13:57');
 
 -- --------------------------------------------------------
 
@@ -1175,7 +1178,7 @@ CREATE TABLE IF NOT EXISTS `veterinarske_stanice` (
   `opis` text COLLATE utf8_unicode_ci NOT NULL,
   `slika` blob NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `veterinarske_stanice`
@@ -1193,7 +1196,8 @@ INSERT INTO `veterinarske_stanice` (`id`, `naziv`, `mesto`, `adresa`, `telefon`,
 (9, 'vet5', 'vet5', 'vet5', '543456546', 'vet5@vet5.rs', '                    vet5                ', 0x61646d696e2f7665746572696e6172736b655f7374616e6963652f33336238363966393036313965383137363364626631666363633839366438642d2d6c696f6e2d6c6f676f2d6d6f6465726e2d6c6f676f2e6a7067),
 (10, 'vet6', 'vet6', 'vet6', '011234', 'vet6@vet6.rs', '                                    zdsgsdtgdfs', 0x61646d696e2f7665746572696e6172736b655f7374616e6963652f64656661756c742d7665746572696e6172792d646f63746f72732d322e6a7067),
 (11, 'vet7', 'vet7', 'vet7', '04254', 'vet7@vet7.rs', '                                    ', 0x61646d696e2f7665746572696e6172736b655f7374616e6963652f),
-(12, 'vet6', 'vet6', 'vet6', '011234', 'vet6@vet6.rs', '                                    zdsgsdtgdfs', 0x61646d696e2f7665746572696e6172736b655f7374616e6963652f64656661756c742d7665746572696e6172792d646f63746f72732d322e6a7067);
+(12, 'vet6', 'vet6', 'vet6', '011234', 'vet6@vet6.rs', '                                    zdsgsdtgdfs', 0x61646d696e2f7665746572696e6172736b655f7374616e6963652f64656661756c742d7665746572696e6172792d646f63746f72732d322e6a7067),
+(13, 'Bane', 'Bane', 'Bane', '0111123456', 'Bane@Bane.rs', '                       veterinarske stanice             ', 0x7068702f7665746572696e6172736b655f7374616e6963652f646f67332e6a7067);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
