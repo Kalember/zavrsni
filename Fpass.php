@@ -30,7 +30,7 @@ if (isset($_POST['f_email'])) {
         $body = "Poruka sa kontakt forme: $message\nOd korisnika: $emailto";
 
         require 'vendor/autoload.php';
-        $sendgrid = new SendGrid("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");
+        $sendgrid = new SendGrid("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");
         $email = new \SendGrid\Mail\Mail();
 
 
@@ -53,7 +53,7 @@ if (!empty($error)) {
         echo "<div class='error-msg'>" . $error[$i] . "</div>";
         $i++;
     }
-} // close if empty errors
+} 
 
 
 if ($rsent == true) {
