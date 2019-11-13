@@ -63,7 +63,7 @@ $.get("html_files/navigacija.html", function(data) {
                 $('#modalLRForm').modal('toggle');
                 $('#LogREGbtn').hide();
                 $("#logovanKorisnik").show();
-                prikaziUsera();
+                //prikaziUsera();
 
             },
             error: function(xhr, resp, text) {
@@ -75,7 +75,7 @@ $.get("html_files/navigacija.html", function(data) {
         return false;
     });
     //
-    function prikaziUsera() {
+    /*function prikaziUsera() {
         $.ajax({
             url: "php/showUser.php",
             type: "get",
@@ -84,7 +84,7 @@ $.get("html_files/navigacija.html", function(data) {
                 $("#dropdownMenuLink").hide()
             }
         })
-    }
+    }*/
 
     $("#logout").on('click', function() {
         $('#LogREGbtn').show();
@@ -137,7 +137,10 @@ $.get("html_files/navigacija.html", function(data) {
                 data: form.serialize(),
                 dataType: "json",
                 success: function(result) {
-                    alert("Poruka je uspesno poslata");
+                    alert("Nova lozinka je poslata");
+                },
+                error: function(error) {
+                    alert("greska prilikom slanja poruke");
                 }
             })
         }

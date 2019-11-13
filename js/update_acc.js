@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+
     function setCookie(cname, cvalue, exdays) {
         var d = new Date();
         d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
@@ -60,8 +61,10 @@ $(document).ready(function() {
 </div>
 
 <button type='submit' class='btn btn-primary'>
-Save Changes
+Sacuvaj promene
 </button>
+<a href="#" id="delete">
+Obrisi nalog</a>
 </form>
 `;
 
@@ -117,4 +120,5 @@ Save Changes
 
         return false;
     });
+
 })
