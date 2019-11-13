@@ -28,23 +28,4 @@ echo '<script type="text/javascript">alert("' . $msg . '")</script>';
  
 mysqli_close($sql);
 
-
-
-/*
-$connection = new mysqli('localhost', 'root', '', 'dogdb');
-
-if ($connection->connect_error) { // Check connection
- die("Connection failed: " . $connection->connect_error);
-} 
-
-
-$email_address = mysqli_real_escape_string($connection, $_POST['email']);
-if(isset($_POST['email']))
-{
-	
-	
-		$sql="INSERT INTO `newsletter` (`email`) VALUES ('$email_address')";
-		echo "<div class='success'><h3>You have successfully subscribed to this newsletter.</h3></div>";
-	
-}*/
 ?>
